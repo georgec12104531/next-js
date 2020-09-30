@@ -1,9 +1,10 @@
-import Navbar from "../components/Navbar";
+import Layout from "../components/Layout";
 
-export default () => (
-  <div>
-    <Navbar></Navbar>
+const About = () => (
+  <Layout>
     <h1>About BitzPrices</h1>
     <p>A place to view Bitcoin prices</p>
-  </div>
+  </Layout>
 );
+
+export default About;
