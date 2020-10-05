@@ -1,4 +1,5 @@
 import Layout from "../components/Layout";
+import Prices from "../components/Prices";
 import fetch from "isomorphic-unfetch";
 
 const Index = ({ bpi }) => {
@@ -8,8 +9,9 @@ const Index = ({ bpi }) => {
     <Layout>
       <div>
         <h1>About BizPrices</h1>
-        <div>{JSON.stringify(bpi)}</div>
       </div>
+      <p>Check current Bitcoin rates</p>
+      <Prices bpi={bpi}></Prices>
     </Layout>
   );
 };
